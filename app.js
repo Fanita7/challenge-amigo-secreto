@@ -12,7 +12,7 @@ function agregarAmigo(){
     console.log (`amigos en lista: ${listaAmigos}`);
     }  
     vaciarCuadro();
-    return listaAmigos;
+    mostrarAmigos();
 }
 
 function vaciarCuadro(){
@@ -20,22 +20,15 @@ function vaciarCuadro(){
 }
 
 
-/*function mostrarAmigos(){
-   let lista = document.getElementsByClassName('.name-list')[0];
+function mostrarAmigos(){
+   let lista = document.getElementsByClassName('name-list')[0];
    lista.innerHTML = '';
-   listaAmigos.forEach(amigo, i) => {
+   listaAmigos.forEach((amigo) => {
     let li = document.createElement('li');
     li.textContent = amigo;
-   }
-   /*let li = document.createElement("li");
-   lista
-        for (let i = 0; i < listaAmigos.length; i++){
-            lista =  + li.appendChild(li);
-            document.getElementsByClassName('.name-list').appendChild(li);
-            li.innerHTML = listaAmigos[i];
-        //lista.innerHTML = '<li>' + listaAmigos[i]+ '</li>';
-        console.log('hej');
-    }
-    */
+    lista.appendChild(li);
+   })
+}
+
 
 
