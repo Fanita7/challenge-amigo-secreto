@@ -12,7 +12,6 @@ function agregarAmigo(){
     console.log (`amigos en lista: ${listaAmigos}`);
     }  
     vaciarCuadro();
-    mostrarAmigos();
     return listaAmigos;
 }
 
@@ -20,7 +19,8 @@ function vaciarCuadro(){
     document.querySelector('#amigo').value = '';
 }
 
-function mostrarAmigos(){
+
+/*function mostrarAmigos(){
    let lista = document.getElementsByClassName('.name-list')[0];
    lista.innerHTML = '';
    listaAmigos.forEach(amigo, i) => {
@@ -37,4 +37,5 @@ function mostrarAmigos(){
         console.log('hej');
     }
     */
-}
+
+
