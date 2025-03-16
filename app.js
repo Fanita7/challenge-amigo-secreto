@@ -30,5 +30,15 @@ function mostrarAmigos(){
    })
 }
 
+function sortearAmigo() {
+    let random = Math.floor(Math.random() * listaAmigos.length);
+    let amigoSecreto = listaAmigos[random];
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = '';
+    let li = document.createElement('li');
+    li.textContent = amigoSecreto;
+    resultado.appendChild(li);
+    console.log(`Amigo secreto: ${amigoSecreto}`);
+}
 
 
